@@ -24,12 +24,13 @@ public class Calculator {
     }
 
     public int multiplyNumbers() {
-        int product = firstNumber + secondNumber;
+        int product = firstNumber * secondNumber;
         return product;
     }
 
     public static void main(String[] args) {
         Calculator calculator = new Calculator(2, 3);
-        calculator
+        System.out.println(calculator.addNumbers());
+        System.out.println(calculator.multiplyNumbers());
     }
 }
